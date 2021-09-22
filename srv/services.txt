@@ -1,0 +1,7 @@
+const cds = require('@sap/cds')
+module.exports = (crd) => {
+    crd.on('READ','Cards', async (req)=>{
+        
+        return [{cardName: 'teste123'}]
+    })
+}
